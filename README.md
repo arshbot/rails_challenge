@@ -1,24 +1,8 @@
-# README
+# Setup and Launch
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1) Place the code_challenge folder in the lib/ directory ([download here](https://drive.google.com/open?id=14uUq7C0Cy7ddZ11MBu2NAyXgwODCwB8K))
+2) Run `rake import_csv`
+3) Run the server with `bin/rails s`
+4) Go to http://0.0.0.0:3000/events
