@@ -8,7 +8,9 @@ class EventsController < ApplicationController
   end
 
   def all
-  	JSON_response(@events = Event.all)
+  	events = Event.all
+  	render json: {status: 'SUCCESS', message: 'Loaded all events', data: events}, status: :ok 
+    
   end
 
 #   def create

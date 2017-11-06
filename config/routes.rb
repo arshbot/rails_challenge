@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   #Mark REST endpoints
 
-  get 'events/all', t0: 'events#all'
+  get 'events/all', to: 'events#all'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
