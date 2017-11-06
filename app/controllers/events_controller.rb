@@ -7,6 +7,10 @@ class EventsController < ApplicationController
   	@events = Event.all
   end
 
+  def all
+  	JSON_response(@events = Event.all)
+  end
+
 #   def create
 # =begin
 #   	@event = Event.new(params[:event])
