@@ -1,0 +1,11 @@
+<table>
+  <tr>
+    <th>Event</th>
+  </tr>
+  <% @events.each do |events| %>
+    <tr>
+      <td><%= events.name %></td>
+      <td><%= link_to "See Attendees", { :controller => "people", :action => "for_event", :events_id => events.id} %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Attendees</th>
+  </tr>
+  <% @people.each do |people| %>
+    <tr>
+      <td><%= people.first_name %></td>
+      <td><%= people.last_name%></td>
+      <td><%= people.email%></td>
+      <td><%= people.gender%></td>
+      <td><%= people.city%></td>
+      <td><%= people.street%></td>
+      <td><%= people.state%></td>
+      <td><%= people.country%></td>
+      <td><%= people.language%></td>
+      <td><%= people.birthdate%></td>
+    </tr>
+  <% end %>
+</table>
