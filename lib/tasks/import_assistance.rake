@@ -1,7 +1,7 @@
 require 'csv'
 desc "Imports a CSV file into an ActiveRecord table"
-task :import, [:filename] => :environment do    
-    CSV.foreach('myfile.csv', :headers => true) do |row|
-      MyModel.create!(row.to_hash)
+task :import_assistance, [:filename] => :environment do    
+    CSV.foreach('/Users/harshagoli/Downloads/code challenge/csv/assistance.csv', :headers => true) do |row|
+    	Event.find(row.to_hash['event_id']).people << Person.find(row.to_hash['person_id'])
     end
 end
